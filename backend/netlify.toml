@@ -1,7 +1,5 @@
 [build]
-  command = "npm run build" # Set your build command here
-  publish = "backend" # Set the directory to publish (change to the correct directory)
-  functions = "backend/netlify/functions" # Set the directory where serverless functions are stored
+  base = "backend"  # Set the base directory to "backend"
 
 [[redirects]]
   from = "/old-page"
@@ -14,4 +12,5 @@
   Cache-Control = "public, max-age=3600"
 
 
-
+[context.production]
+  command = "npm run build:production" # Customize for your production build if needed
