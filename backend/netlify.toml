@@ -15,5 +15,3 @@
 
 
 
-[context.production]
-  command = "npm run build:production" # Customize for your production build if needed
