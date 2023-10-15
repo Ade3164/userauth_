@@ -32,7 +32,8 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (request, response, next) => {
-  response.json({message:"Welcome to my server"});
+  response.json({message:`Wishing you a relaxed and cozy Sunday with your loved ones. Enjoy the simple joys and
+  make beautiful memories today. I love you ❤️❤️❤️❤️`});
   next();
 });
 
