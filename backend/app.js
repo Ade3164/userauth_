@@ -32,8 +32,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 app.get("/", (request, response, next) => {
-  response.json({message:`Wishing you a relaxed and cozy Sunday with your loved ones. Enjoy the simple joys and
-  make beautiful memories today. I love you ❤️❤️❤️❤️`});
+  response.json({message:"You are Welcome to my Server" });
   next();
 });
 
@@ -128,12 +127,12 @@ app.post("/login", (request, response) => {
 
 app.get("/free-endpoint", (request, response, next)=>{
   
-  response.json({message:"you are free to acess me"});
+  response.json({message:"You are free to access me"});
 });
 
 app.get("/auth-endpoint", auth,  (request, response, next)=>{
   
-  response.json({message: "you are authorized to acess me"});
+  response.json({message: "You are authorized to acess me"});
 
 });
 
